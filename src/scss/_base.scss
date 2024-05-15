@@ -8,41 +8,6 @@
 /* ====================================
 // reset rules
 // ==================================== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-
-  font-size: 1rem;
-  line-height: 1.25;
-}
-
-a {
-  color: inherit;
-}
-
-img,
-video {
-  max-inline-size: 100%;
-  block-size: auto;
-  vertical-align: middle;
-}
-
-/* ====================================
-// base rules
-// ==================================== */
-
 .flexbox {
   .wrapper {
     min-height: 100px;
@@ -65,13 +30,13 @@ video {
   .wrapper-2 {
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
   }
 
   .wrapper-3 {
     display: flex;
     flex-direction: row;
     align-items: end;
-    justify-content: space-around;
   }
 
   .wrapper-4 {
@@ -82,4 +47,26 @@ video {
       width: 50%;
     }
   }
+}
+
+.selectors h2 {
+  font-size: 25px;
+}
+
+.selectors h2,
+.selectors h3 {
+  font-weight: 700;
+}
+
+.selectors .section .year {
+  color: red;
+}
+
+.selectors .section h3 {
+  text-decoration: underline;
+}
+
+.selectors .category,
+.selectors .year {
+  font-style: italic;
 }
